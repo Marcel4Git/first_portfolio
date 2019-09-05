@@ -1,0 +1,66 @@
+#what .items {
+  display: block;
+  padding: .75rem;
+}
+/* Align the icons to the left of items  */
+
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+/* Position the items and icons */
+
+#what .items .item i {
+  align-self: center;
+  margin-bottom : 0;
+  margin-right: 1.3rem;
+}
+
+/* Smartphones  */
+
+@media (max-width: 500px) {
+/* Navbar */
+
+#navbar {
+  align-items: center;
+  flex-direction: column;
+}
+#navbar .logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Showcase */
+#showcase .showcase-content {
+  top: 100px;
+}
+
+/* Who We Are */
+
+#who {
+  display: block;
+}
+#who .who-img {
+  display: none;
+}
+
+/* Clients */
+#clients .items img{
+  width: 80%;
+}
+/* targeting the div of last child, not the img to display none */
+#clients .items div:last-child {
+  display: none;
+}
+
+
+/* Contact */
+
+#contact {
+  flex-direction: column;
+}
+#contact .map {
+  border-top: 2px solid #333;
+}
+}
+
